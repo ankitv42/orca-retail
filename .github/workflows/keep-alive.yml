@@ -13,7 +13,7 @@ jobs:
     steps:
       - name: Ping health endpoint
         run: |
-          echo "Pinging https://orca-retail.onrender.com/docs/health ..."
+          echo "Pinging https://orca-retail.onrender.com/health ..."
           STATUS=$(curl -o /dev/null -s -w "%{http_code}" \
             --max-time 30 \
             --retry 3 \
