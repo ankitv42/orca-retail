@@ -20,7 +20,7 @@ jobs:
             --retry-delay 10 \
             --retry-all-errors \
             -L \
-            https://orca-retail.onrender.com/docs/health)
+            https://orca-retail.onrender.com/health)
           echo "HTTP Status: $STATUS"
           if [ "$STATUS" -ge 200 ] && [ "$STATUS" -lt 400 ]; then
             echo "App is alive!"
